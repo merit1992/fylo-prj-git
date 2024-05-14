@@ -1,0 +1,411 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* bg footer  */
+    --primary-v-dark-blue: hsl(243, 87%, 12%);
+    --primary-d-blue: hsl(238, 22%, 44%);
+
+    /* button bg */
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+
+    /* Neutral */
+    --light-gray-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+
+    /* Second section bg color */
+    --sec-production-bg-col: hsl(250, 75%, 98%);
+
+    /* font family */
+    --heading-fw : 700;
+    --header-nav-fw: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-properties {
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", sans-serif;
+}   
+
+.wrapper, .productive-svg, .get-access-wrapper, .contact-wrapper {
+    width: 90%;
+    margin: 0 auto;   
+}
+
+.svg-logo {
+    width: 60px;
+    height: 47px;
+}
+
+.logo, .foot-log {
+    width: 100px;
+    height: auto;
+    
+}
+
+/* animation content using keyframe */
+.form-btn-sub {
+    animation: logo-movement;
+    animation-duration: 10s;
+    position: relative;
+}
+.sub-parag {
+    animation: logo-movement;
+    animation-duration: 8s;
+    position: relative;
+}
+.sub-header {
+    animation: logo-movement;
+    animation-duration: 6s;
+    position: relative;
+}
+
+@keyframes logo-movement {
+    0%   {left:-2000px; top:-100px;}
+    25%  {left:0px; top:0px;}
+}
+
+.header-class {
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.nav-flex {
+    gap: 1em;
+}
+
+.svg-main {
+    width: 400px;
+    height: 400px;
+}
+
+.celeb-main {
+    width: 100%;
+    height: auto;
+}
+
+.list-items {
+    color: #1a3232;
+    font-size: 16px;
+}
+
+.list-items-link {
+    color: inherit;
+}
+
+.subscribe {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.sub-parag {
+    margin: 1em 0;
+}
+
+.sub-header {
+    font-weight: var(--heading-fw);
+}
+
+.input-email, .btn-sub {
+    width: 100%;
+    padding: .7em 0;
+    border-radius: 2px;
+}
+
+.input-email {
+    border: 1px solid var(--light-gray);
+}
+
+.input-email::placeholder {
+    padding-left: 2em;
+    color: var(--light-gray);
+    opacity: .5;
+}
+
+.btn-sub {
+    margin-top: 1em;
+    background-color: var(--bright-blue);
+    color: var(--light-gray-blue);
+    border: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: var(--heading-fw);
+}
+
+.productive {
+    background-color: var(--sec-production-bg-col);
+    padding-bottom: 3em;
+    margin-top: 4em;
+}
+.productive {
+    background-image: url("images/bg-curve-mobile.svg");
+    background-size: cover;
+}
+
+.productive-headings {
+    margin: 4em auto;
+}
+.product-h-tag {
+    font-size: 1.1rem;
+    text-align: center;
+
+}
+
+.product-p {
+    margin: 1em 0;
+}
+
+.product-link-div, hr {
+    width: 50%;
+    margin: 2em auto .5em;
+    color: var(--moderate-cyan);
+}
+hr {
+    margin-top: 0;
+}
+
+.product-link {
+    color: var(--moderate-cyan);
+    font-size: 16px;
+}
+
+.arrow {
+    background-color: var(--moderate-cyan);
+    border-radius: 50%;
+}
+
+.card {
+    background-color: #fff; 
+    border-radius: 10px; 
+    width: 90%; 
+    margin: 1em auto 3em; 
+    padding: 1em;
+    font-size: 12px;
+}
+
+.quote-p {
+    line-height: 23px;
+}
+
+.profile {
+    width: 60%; 
+    margin-top: .5em
+}
+
+.profile-image {
+    width: 20%; 
+    border-radius: 50%;
+}
+
+/* subscribe before the footer   */
+.get-access, .contact {
+    color: #fff;
+    padding: 3em 0;
+}
+
+.get-access {
+    text-align: center;
+    background-color: var(--primary-d-blue);
+}
+
+.access-p {
+    margin: 1em 0 1.5em;
+    color: var(--light-gray-blu);
+    font-weight: 100;
+}
+
+.get-access-heading {
+    font-size: 18px;
+}
+
+.contact {
+    background-color: var( --primary-v-dark-blue);
+    margin: 0 auto;
+}
+
+.logo-contact, .links, .link-2 {
+    margin-bottom: 3em;
+}
+
+.contact-div, .calling, .list-items-footer {
+    margin: 1em 0;
+}
+
+.email-addr, .phone {
+    width: 85%;
+}
+
+.color-primary {
+    color: var(--sec-production-bg-col);
+}
+
+.sos-med {
+    text-align: center;
+}
+
+.cont-logo{
+    width: 30px; 
+    height:30px;
+    outline: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 .2em;
+    padding: .28em;
+}
+
+/* hover on the links and the button for the desktop*/
+
+.list-items-link:hover, .list-items-link:active {
+    color: #fff;
+    background-color: var(--light-gray);
+    transition: .5s ease-in-out;
+    padding: .5em   ;
+    cursor: pointer;
+}
+
+.btn-sub:hover, .btn-sub:hover {
+    background-color: var(--light-gray);
+    color: #fff;
+}
+
+
+
+/* media query for bigger screen from 900px */
+@media(min-width: 900px) {
+    .main-section, .productive-svg {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 4em;
+    }
+
+    .subscribe {
+        margin-top: 4em;
+        text-align: left;
+    }
+
+    .sub-header {
+        font-size: 2rem;
+        line-height: 45px;
+    }
+
+    .form-btn-sub {
+        width: 80%;
+        display: flex;
+    }
+
+    .btn-sub {
+        width: 35%;
+        margin: 0;
+    }
+
+    form {
+        width: 64%;
+    }
+
+    .productive-headings {
+        margin-top: 10em;
+    }
+
+    .product-h-tag {
+        font-size: 1.5rem;
+        text-align: left;
+        margin-bottom: 1em;
+    }
+
+    .product-p, .product-p-sec {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .product-link-div, hr {
+        margin: 2em 0 .5em;
+    }
+    hr {
+        margin-top: 0;
+    }
+
+    .card {
+        margin-top: 2em;
+    }
+
+    .get-access-wrapper {
+        display: flex;
+    }
+
+    .access-p {
+        width: 65%;
+        font-size: 14px;
+    }
+
+    .access-desc {
+        width: 55%;
+    }
+
+    .get-access {
+        text-align: left;
+    }
+    
+    .form-sub {
+        width: 42%;
+    }
+
+    .foot-mail {
+        width: 100%;
+    }
+
+    .btn-foot {
+        margin-top: 1em;
+    }
+
+    .footer-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .logo-contact, .sos-med, .link-2, .links {
+        width: 20%;
+        margin: 0;
+    }
+
+    .contact-div {
+        margin: 0;
+        width: 30%;
+    }
+    .svg-footer {
+        margin: 0;
+    }
+    .sos-med {
+        padding-top: 1em;
+        text-align: left;
+    }
+
+    .productive {
+        background-image: url("images/bg-curve-desktop.svg");
+    }
+
+}
